@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => (
   <footer>
-    Footer
+    © 2020 Kasa. All rights reserved
   </footer>
 );
 
