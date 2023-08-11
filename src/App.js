@@ -3,7 +3,7 @@ import {
   createBrowserRouter,
 } from 'react-router-dom';
 import ROUTES_MAPPING from './routes/ROUTES_MAPPING';
-import 'App.scss'
+import './App.scss'
 
 // const AppWithRouter = () => {
 //   const routes = useRoutes([...ROUTES_MAPPING]);
