@@ -5,7 +5,7 @@ import HousingCard from './HomePage.components/HousingCard'
 const HomePage = () => {
   return (
     <>
-      <h1>Home Page</h1>
+      <h1>Chez vous, partout et ailleurs</h1>
       <div className="housing-cards">
         {housing.map(({
           id = '', 
