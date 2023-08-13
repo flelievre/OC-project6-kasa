@@ -1,27 +1,22 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import useHousingPage from './HousingPage.logic/useHousingPage';
 
-const HousingPage = ({
-  id = '',
-  title = '',
-  cover = '',
-  pictures = [],
-  description = '',
-  host: {
-    name = '',
-    picture = '',
-  } = {},
-  rating = '',
-  location = '',
-  equipments = [],
-  tags = [],
-} = {}) => {
+const HousingPage = () => {
   const {
-    housingId,
-  } = useParams();
-  console.log(housingId);
+    id,
+    title,
+    cover,
+    pictures,
+    description,
+    hostName,
+    hostPicture,
+    rating,
+    location,
+    equipments,
+    tags,
+  } = useHousingPage();
   return (
-    <h1>Housing Page</h1>
+    <h1>{title}</h1>
   );
 };
 

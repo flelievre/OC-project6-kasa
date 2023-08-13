@@ -1,8 +1,6 @@
 import React from 'react';
-import {
-  Link as ReactRouterLink,
-} from 'react-router-dom';
 import housing from '../../data/logements.json';
+import HousingCard from './HomePage.components/HousingCard'
 
 const HomePage = () => {
   return (
@@ -14,16 +12,12 @@ const HomePage = () => {
           title = '',
           cover = '',
         }) => (
-          <ReactRouterLink
+          <HousingCard
             key={id}
-            to={`housing/${id}`}
-            className="housing-link"
-          >
-            <article className="housing-article">
-              <img src={cover} alt={title}></img>
-              <h3 className="housing-card-title">{title}</h3>
-            </article>
-          </ReactRouterLink>
+            id={id} 
+            title={title}
+            cover={cover}
+          />
         ))}
       </div>
     </>
