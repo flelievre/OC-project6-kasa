@@ -1,10 +1,19 @@
-import { useParams } from 'react-router-dom';
+import {
+  useParams,
+  redirectDocument,
+} from 'react-router-dom';
 import housing from '../../../data/logements.json';
 
 const useHousingPage = () => {
   const {
     housingId,
   } = useParams();
+
+  const matchingHousings = housing.filter(({ id: dataHousingId }) => (
+    (dataHousingId === housingId)
+  ));
+
+  const paramNotMatchingAHousing = (matchingHousings.length === 0);
 
   const {
     id = '',
@@ -20,9 +29,9 @@ const useHousingPage = () => {
     location = '',
     equipments = [],
     tags = [],
-  } = housing.filter(({ id: dataHousingId }) => (
-    (dataHousingId === housingId)
-  ))[0];
+  } = paramNotMatchingAHousing
+    ? {}
+    : matchingHousings[0];
 
   const hasMoreThanOnePicture = (pictures.length > 1);
 
@@ -39,6 +48,7 @@ const useHousingPage = () => {
     equipments,
     tags,
     hasMoreThanOnePicture,
+    paramNotMatchingAHousing,
   };
 };
 
