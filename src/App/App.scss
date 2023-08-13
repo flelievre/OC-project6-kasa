@@ -4,7 +4,6 @@ h1 {
 
 footer {
   width: 100%;
-  position: fixed;
   bottom: 0;
   height: 150px;
   color: white;
@@ -12,4 +11,19 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+
+nav > ul {
+  display: flex;
+}
+
+nav > ul > li {
+  list-style-type: none;
 }
