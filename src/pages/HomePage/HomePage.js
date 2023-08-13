@@ -14,10 +14,14 @@ const HomePage = () => {
           title = '',
           cover = '',
         }) => (
-          <ReactRouterLink to={`housing/${id}`} key={id}>
-            <article className="housing-card">
+          <ReactRouterLink
+            key={id}
+            to={`housing/${id}`}
+            className="housing-link"
+          >
+            <article className="housing-article">
               <img src={cover} alt={title}></img>
-              <h3 className="card-title">{title}</h3>
+              <h3 className="housing-card-title">{title}</h3>
             </article>
           </ReactRouterLink>
         ))}

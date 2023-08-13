@@ -27,3 +27,19 @@ nav > ul {
 nav > ul > li {
   list-style-type: none;
 }
+
+.housing-cards {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.housing-link {
+  display: flex;
+  width: fit-content;
+}
+
+.housing-cards > a > article > img {
+  max-width: 300px;
+}
