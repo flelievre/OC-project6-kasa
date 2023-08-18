@@ -2,12 +2,18 @@ import React from 'react';
 import {
   Link as ReactRouterLink,
 } from 'react-router-dom';
+import {
+  logoRed,
+} from '../../assets';
 
 const Header = () => (
   <header>
-    <span>
-    KASA
-    </span>
+    <img
+      src={logoRed}
+      alt="KASA red logo"
+      width="188"
+      height="68"
+    />
     <nav>
       <ul>
         <li>
@@ -16,7 +22,7 @@ const Header = () => (
           </ReactRouterLink>
         </li>
         <li>
-          <ReactRouterLink to="about">
+          <ReactRouterLink to="about" className="text-decoration-none">
             À Propos
           </ReactRouterLink>
         </li>

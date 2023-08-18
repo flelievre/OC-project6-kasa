@@ -1,4 +1,4 @@
-$body-padding: 85px;
+$body-padding: 88px;
 $light-red: #FF5363;
 
 footer {
@@ -22,7 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-left: $body-padding;
   padding-right: $body-padding;
 }
@@ -34,11 +34,21 @@ main {
 
 nav > ul {
   display: flex;
-  gap: 50px;
+  gap: 57px;
 }
 
 nav > ul > li {
   list-style-type: none;
+  font-size: 24px;
+  line-height: 34.22px;
+}
+
+nav > ul > li > a {
+  color: $light-red !important;
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
 }
 
 .housing-cards {
