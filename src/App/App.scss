@@ -1,5 +1,6 @@
 $body-padding: 88px;
 $light-red: #FF5363;
+$gallery-background: #F6F6F6;
 
 footer {
   width: 100%;
@@ -25,6 +26,40 @@ header {
   padding-top: 35px;
   padding-left: $body-padding;
   padding-right: $body-padding;
+  margin-bottom: 50px;
+}
+
+.image-title-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.image-title-container > h1 {
+  position: absolute;
+  top: 35px;
+  font-size: 48px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.image-title-container > img {
+  border-radius: 20px;
+  height: 205px;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.image-title-container > .opacity-background {
+  height: 205px;
+  width: 100%;
+  position: absolute;
+  background:rgba(0,0,0, 0.3);
+  border-radius: 20px;  
 }
 
 main {
@@ -56,10 +91,9 @@ nav > ul > li > a {
   justify-content: space-between;
   align-items: center;
   display: flex;
-  background-color: grey;
-  border-radius: 20px;
+  background-color: $gallery-background;
+  border-radius: 25px;
   padding: 30px;
-  margin-bottom: 50px;
 }
 
 .housing-link {
@@ -68,44 +102,36 @@ nav > ul > li > a {
   min-width: 30%;
 }
 
-.housing-cards > a > article > img {
-  border-radius: 20px;
-  height: 200px;
-  width: 200px;
-  overflow: hidden;
-  object-fit: cover;
+.housing-cards > a {
+  margin-bottom: 30px;
 }
 
-.image-title-container {
+.housing-cards > a > article {
   position: relative;
-  text-align: center;
 }
 
-.image-title-container > h1 {
+.housing-cards > a > article > h3 {
   position: absolute;
-  top: 75px;
-  font-size: 48px;
+  bottom: 10px;
+  left: 20px;
+  font-size: 18px;
   color: white;
-  width: 100%;
-  text-align: center;
   font-weight: 500;
+  width: 50%;
 }
 
-.image-title-container > img {
-  border-radius: 20px;
-  height: 205px;
-  margin-top: 40px;
-  width: 100%;
+.housing-cards > a > article > img {
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
   overflow: hidden;
   object-fit: cover;
-  z-index: -1;
 }
 
-.image-title-container > .opacity-background {
-  height: 205px;
-  width: 100%;
+.housing-cards > a > article > .linear-gradient {
+  height: 300px;
+  width: 300px;
   position: absolute;
-  margin-top: 40px;
-  background:rgba(0,0,0, 0.3);
-  border-radius: 20px;  
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 10px;  
 }

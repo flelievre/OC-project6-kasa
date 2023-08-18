@@ -13,6 +13,7 @@ const HousingCard = ({
     className="housing-link"
   >
     <article className="housing-article">
+      <div className="linear-gradient" />
       <img src={cover} alt={title}></img>
       <h3 className="housing-card-title">{title}</h3>
     </article>
