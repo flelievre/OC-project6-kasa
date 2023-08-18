@@ -75,3 +75,37 @@ nav > ul > li > a {
   overflow: hidden;
   object-fit: cover;
 }
+
+.image-title-container {
+  position: relative;
+  text-align: center;
+}
+
+.image-title-container > h1 {
+  position: absolute;
+  top: 75px;
+  font-size: 48px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.image-title-container > img {
+  border-radius: 20px;
+  height: 205px;
+  margin-top: 40px;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.image-title-container > .opacity-background {
+  height: 205px;
+  width: 100%;
+  position: absolute;
+  margin-top: 40px;
+  background:rgba(0,0,0, 0.3);
+  border-radius: 20px;  
+}

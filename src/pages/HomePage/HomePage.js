@@ -1,11 +1,18 @@
 import React from 'react';
 import housing from '../../data/logements.json';
 import HousingCard from './HomePage.components/HousingCard'
+import {
+  homePageTitleBg,
+} from '../../assets';
 
 const HomePage = () => {
   return (
     <>
-      <h1>Chez vous, partout et ailleurs</h1>
+      <div className="image-title-container">
+        <div className="opacity-background" />
+        <img src={homePageTitleBg} alt="sea side view"></img>
+        <h1>Chez vous, partout et ailleurs</h1>
+      </div>
       <div className="housing-cards">
         {housing.map(({
           id = '', 
