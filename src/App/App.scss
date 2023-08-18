@@ -2,6 +2,47 @@ $body-padding: 88px;
 $light-red: #FF5363;
 $gallery-background: #F6F6F6;
 
+.text-align-center {
+  text-align: center;
+}
+
+.h1-404 {
+  font-family: Montserrat;
+  font-size: 248px;
+  font-weight: 700;
+  line-height: 288px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $light-red;
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+
+.h2-404 {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $light-red;
+  margin-bottom: 100px;
+}
+
+.margin-bottom-100px {
+  margin-bottom: 100px;
+}
+
+.link-404 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $light-red;
+}
+
 footer {
   width: 100%;
   bottom: 0;
@@ -127,6 +168,7 @@ nav > ul > li > a {
   overflow: hidden;
   object-fit: cover;
 }
+
 
 .housing-cards > a > article > .linear-gradient {
   height: 300px;
