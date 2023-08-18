@@ -1,6 +1,5 @@
 import {
   useParams,
-  redirectDocument,
 } from 'react-router-dom';
 import housing from '../../../data/logements.json';
 
