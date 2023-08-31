@@ -1,7 +1,8 @@
 import React from 'react';
 import {
   logoWhite,
-} from '../../assets';
+} from '../../../assets';
+import './Footer.module.scss';
 
 const Footer = () => (
   <footer>

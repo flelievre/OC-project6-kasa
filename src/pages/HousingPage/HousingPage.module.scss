@@ -1,0 +1,109 @@
+@import '../../variables.scss';
+
+.coverContainer {
+  position: relative;
+  text-align: center;
+}
+
+.coverContainerImage {
+  border-radius: 20px;
+  height: 415px;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.coverContainerPrevArrow {
+  position: relative;
+  height: 50px;
+  top: -250px;
+  left: -480px;
+  height: 80px;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.coverContainerNextArrow {
+  position: relative;
+  height: 50px;
+  top: -250px;
+  left: 480px;
+  height: 80px;
+  transform: rotate(270deg);
+  cursor: pointer;
+}
+
+h1 {
+  color: $light-red;
+  font-size: 36px;
+  line-height: 51.34px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 0;
+  color: $light-red;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.tag {
+  background-color: $light-red;
+  color: white;
+  padding: 5px 30px 5px 30px;
+  margin-right: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.host {
+  display: flex;
+  flex-direction: column;
+}
+
+.hostInfos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  max-width: 150px;
+}
+
+.hostInfos > img {
+  border-radius: 64px;
+  height: 64px;
+  width: 64px;
+}
+
+.hostName {
+  color: $light-red;
+  text-align: right;
+  margin-right: 10px;
+  font-size: 18px;
+  line-height: 25.67px;
+  font-weight: 500;
+}
+
+.descriptionEquipmentsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.carouselIndicator {
+  position: relative;
+  top: -110px;
+  color: white;
+  left: -100px;
+}

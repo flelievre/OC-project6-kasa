@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Link as ReactRouterLink,
 } from 'react-router-dom';
+import styles from './HousingCard.module.scss';
 
 const HousingCard = ({
   id = '',
@@ -10,12 +11,12 @@ const HousingCard = ({
 }) => (
   <ReactRouterLink
     to={`housing/${id}`}
-    className="housing-link"
+    className={styles.housingLink}
   >
-    <article className="housing-article">
-      <div className="linear-gradient" />
+    <article className={styles.housingArticle}>
+      <div className={styles.housingLinearGradient} />
       <img src={cover} alt={title}></img>
-      <h3 className="housing-card-title">{title}</h3>
+      <h2>{title}</h2>
     </article>
   </ReactRouterLink>
 );

@@ -4,7 +4,8 @@ import {
 } from 'react-router-dom';
 import {
   logoRed,
-} from '../../assets';
+} from '../../../assets';
+import styles from './Header.module.scss';
 
 const Header = () => (
   <header>
@@ -22,7 +23,7 @@ const Header = () => (
           </ReactRouterLink>
         </li>
         <li>
-          <ReactRouterLink to="about" className="text-decoration-none">
+          <ReactRouterLink to="about" className={styles.aboutLink}>
             À Propos
           </ReactRouterLink>
         </li>

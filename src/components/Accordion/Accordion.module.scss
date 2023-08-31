@@ -1,0 +1,47 @@
+@import '../../variables.scss';
+
+.accordion {
+  color: white;
+  width: 47%;
+  overflow: hidden;
+}
+
+.accordionTitle {
+  background-color: $light-red;
+  cursor: pointer;
+  padding: 7.5px;
+  display: flex;
+  font-size: 18px;
+  line-height: 25px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  transform: rotate(180deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.arrow.open {
+  transform: rotate(0deg);
+}
+
+.accordionContent {
+  background-color: #F6F6F6;
+  color: $light-red;
+  border-radius: 5px;
+  font-weight: 400;
+  overflow: hidden;
+  position: relative;
+  top: -220px;
+  z-index: -1;
+  transition: top 0.2s linear;
+  padding: 45px 15px 25px 15px;
+}
+
+.accordion.open .accordionContent {
+  top: -20px;
+}

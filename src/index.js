@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import 'typeface-montserrat';
+// import 'typeface-montserrat';
 import './index.css';
 import App from './App/App';
 import reportWebVitals from './reportWebVitals';

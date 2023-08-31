@@ -1,0 +1,36 @@
+.housingLink {
+  display: flex;
+  width: fit-content;
+  min-width: 30%;
+  margin-bottom: 30px;
+}
+
+.housingArticle {
+  position: relative;
+}
+
+.housingArticle > h2 {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  width: 90%;
+}
+
+.housingArticle > img {
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.housingLinearGradient {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 10px;  
+}

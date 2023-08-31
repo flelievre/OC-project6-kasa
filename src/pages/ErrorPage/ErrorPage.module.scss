@@ -1,0 +1,39 @@
+@import '../../variables.scss';
+
+.h1404 {
+  font-family: Montserrat;
+  font-size: 248px;
+  font-weight: 700;
+  line-height: 288px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $light-red;
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+
+.h2404 {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $light-red;
+  margin-bottom: 100px;
+}
+
+.backToHomeLinkContainer {
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.link404 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $light-red;
+}
