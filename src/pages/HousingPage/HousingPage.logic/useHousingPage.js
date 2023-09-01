@@ -44,17 +44,18 @@ const useHousingPage = () => {
   const handleNextClick = () => {
     if (currentPictureIndex < (pictures.length - 1)) {
       setCurrentPictureIndex(currentPictureIndex + 1);
+    } else {
+      setCurrentPictureIndex(0);
     }
   }
 
   const handlePreviousClick = () => {
     if (currentPictureIndex > 0) {
       setCurrentPictureIndex(currentPictureIndex - 1);
+    } else {
+      setCurrentPictureIndex(pictures.length - 1);
     }
   }
-
-  const isShowingFirst = (currentPictureIndex === 0);
-  const isShowingLast = (currentPictureIndex === (pictures.length - 1));
 
   return {
     id,
@@ -74,8 +75,6 @@ const useHousingPage = () => {
     pictureIndicator,
     handleNextClick,
     handlePreviousClick,
-    isShowingFirst,
-    isShowingLast,
   };
 };
 

@@ -2,8 +2,9 @@
 
 .accordion {
   color: white;
-  width: 47%;
   overflow: hidden;
+  height: 70px;
+  transition: height 0.4s linear;
 }
 
 .accordionTitle {
@@ -40,6 +41,10 @@
   z-index: -1;
   transition: top 0.2s linear;
   padding: 45px 15px 25px 15px;
+}
+
+.accordion.open {
+  height: auto;
 }
 
 .accordion.open .accordionContent {

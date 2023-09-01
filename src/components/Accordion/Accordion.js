@@ -6,7 +6,11 @@ import {
 } from '../../assets';
 import styles from './Accordion.module.scss';
 
-const Accordion = ({ title, children }) => {
+const Accordion = ({
+  title = '',
+  className = '',
+  children = <></>,
+} = {}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
@@ -14,7 +18,7 @@ const Accordion = ({ title, children }) => {
   };
 
   return (
-    <div className={`${styles.accordion} ${isOpen ? styles.open : ''}`}>
+    <div className={`${styles.accordion} ${isOpen ? styles.open : ''} ${className}`}>
       <div className={styles.accordionTitle} onClick={toggleAccordion}>
         {title}
         <img

@@ -4,6 +4,9 @@ import HousingCard from './HomePage.components/HousingCard'
 import {
   homePageTitleBg,
 } from '../../assets';
+import {
+  ImageHeader,
+} from '../../components';
 import styles from './HomePage.module.scss';
 
 const NB_DISPLAYED_HOUSINGS = 20;
@@ -11,11 +14,11 @@ const NB_DISPLAYED_HOUSINGS = 20;
 const HomePage = () => {
   return (
     <>
-      <div className={styles.imageTitleContainer}>
-        <div className={styles.opacityBg} />
-        <img src={homePageTitleBg} alt="sea side view"></img>
-        <h1>Chez vous, partout et ailleurs</h1>
-      </div>
+      <ImageHeader
+        title="Chez vous, partout et ailleurs"
+        imgSrc={homePageTitleBg}
+        imgAlt="sea side view"
+      />
       <div className={styles.housingCards}>
         {housing.map(({
           id = '', 

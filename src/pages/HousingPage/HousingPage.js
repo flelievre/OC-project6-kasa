@@ -1,6 +1,4 @@
-import React, {
-  useState,
-} from 'react';
+import React from 'react';
 import {
   Navigate,
 } from 'react-router-dom';
@@ -16,9 +14,7 @@ import {
 
 const HousingPage = () => {
   const {
-    id = '',
     title = '',
-    cover = '',
     pictures = [],
     description = '',
     hostName = '',
@@ -33,8 +29,6 @@ const HousingPage = () => {
     pictureIndicator = '1/1',
     handleNextClick = () => {},
     handlePreviousClick = () => {},
-    isShowingFirst = true,
-    isShowingLast = false,
   } = useHousingPage();
   return (
     paramNotMatchingAHousing
@@ -54,12 +48,12 @@ const HousingPage = () => {
                 <img
                   src={arrow}
                   alt="previous button"
-                  className={`${isShowingFirst ? 'hidden ' : ''}${styles.coverContainerPrevArrow}`}
+                  className={styles.coverContainerPrevArrow}
                   onClick={handlePreviousClick}
                 />
                 <img
                   src={arrow}
-                  className={`${isShowingLast ? 'hidden ' : ''}${styles.coverContainerNextArrow}`}
+                  className={styles.coverContainerNextArrow}
                   alt="next button"
                   onClick={handleNextClick}
                 />
@@ -87,11 +81,13 @@ const HousingPage = () => {
           </section>
           <section className={styles.descriptionEquipmentsContainer}>
             <Accordion
+              className={styles.halfWidth}
               title="Description"
             >
               {description}
             </Accordion>
             <Accordion
+              className={styles.halfWidth}
               title="Équipements"
             >
               {equipments.map((equipment) => (

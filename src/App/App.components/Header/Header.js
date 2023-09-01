@@ -6,30 +6,45 @@ import {
   logoRed,
 } from '../../../assets';
 import styles from './Header.module.scss';
+import NAV_LINKS from './Header.constants/NAV_LINKS';
+import useHeader from './Header.logic/useHeader';
+  
 
-const Header = () => (
-  <header>
-    <img
-      src={logoRed}
-      alt="KASA red logo"
-      width="188"
-      height="68"
-    />
-    <nav>
-      <ul>
-        <li>
-          <ReactRouterLink to="/">
-            Accueil
-          </ReactRouterLink>
-        </li>
-        <li>
-          <ReactRouterLink to="about" className={styles.aboutLink}>
-            À Propos
-          </ReactRouterLink>
-        </li>
-      </ul>
-    </nav>
-  </header>
-);
+const Header = () => {
+  const {
+    isRouteActive,
+  } = useHeader();
+  return (
+    <header>
+      <img
+        src={logoRed}
+        alt="KASA red logo"
+        width="188"
+        height="68"
+      />
+      <nav>
+        <ul>
+          {NAV_LINKS.map(({
+            route = '',
+            label = '',
+          }) => (
+            <li key={route}>
+              <ReactRouterLink
+                to={route}
+                className={(
+                  isRouteActive(route)
+                    ? ''
+                    : styles.linkInactive
+                )}
+              >
+                {label}
+              </ReactRouterLink>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
+  );
+};
 
 export default Header;
