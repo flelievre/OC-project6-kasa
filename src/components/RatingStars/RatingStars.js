@@ -2,7 +2,7 @@ import {
   starActive,
   starInactive,
 } from '../../assets';
-import styles from './RatingStars.module.scss';
+import './RatingStars.module.scss';
 
 const RatingStars = ({
   rating = 0,
