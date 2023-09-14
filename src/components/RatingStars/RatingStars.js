@@ -2,10 +2,10 @@ import {
   starActive,
   starInactive,
 } from '../../assets';
+import styles from './RatingStars.module.scss';
 
 const RatingStars = ({
   rating = 0,
-  height = '30px',
 }) => {
   const ratingValue = parseInt(rating);
   const fullStars = Math.floor(ratingValue);
@@ -18,9 +18,6 @@ const RatingStars = ({
       <img
         src={starActive}
         alt="full star"
-        style={{
-          height,
-        }}
         key={i}
       />);
   }
@@ -30,9 +27,6 @@ const RatingStars = ({
       <img
         src={starInactive}
         alt="half star"
-        style={{
-          height,
-        }}
         key={i}
       />
     );

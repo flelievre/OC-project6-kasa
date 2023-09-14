@@ -9,3 +9,10 @@
   border-radius: 25px;
   padding: 30px;
 }
+
+@media (max-width: 767px) {
+  .housingCards {
+    padding: 0;
+    background-color: none;
+  }
+}

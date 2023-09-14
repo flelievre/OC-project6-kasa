@@ -37,3 +37,20 @@
   text-align: left;
   color: $light-red;
 }
+
+@media (max-width: 767px) {
+  .h1404 {
+    font-size: 96px;
+    line-height: 136px;
+  }
+  .h2404 {
+    font-size: 18px;
+    line-height: 26px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .link404 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

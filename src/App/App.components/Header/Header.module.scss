@@ -28,3 +28,23 @@ nav > ul > li {
 nav > ul > li > a {
   color: $light-red !important;
 }
+
+@media (max-width: 767px) {
+  header {
+    padding-left: $mobile-body-padding;
+    padding-right: $mobile-body-padding;
+    margin-bottom: 20px;
+  }
+  nav > ul {
+    gap: 26px;
+  }
+  nav > ul > li {
+    font-size: 12px;
+    line-height: 17px;
+    text-transform: uppercase;
+  }
+  .logo {
+    height: 46px;
+    width: 145px;
+  }
+}

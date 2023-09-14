@@ -2,4 +2,12 @@
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
-};
+}
+
+@media (max-width: 767px) {
+  .accordionContainer {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+}

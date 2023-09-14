@@ -1,4 +1,9 @@
-import React from 'react';
+import React, {
+  useContext,
+} from 'react';
+import {
+  IsMobileContext,
+} from '../../contexts';
 import housing from '../../data/logements.json';
 import HousingCard from './HomePage.components/HousingCard'
 import {
@@ -12,6 +17,8 @@ import styles from './HomePage.module.scss';
 const NB_DISPLAYED_HOUSINGS = 20;
 
 const HomePage = () => {
+  const isMobile = useContext(IsMobileContext);
+  console.log(isMobile);
   return (
     <>
       <ImageHeader

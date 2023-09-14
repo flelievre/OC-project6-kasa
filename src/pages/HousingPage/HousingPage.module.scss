@@ -20,7 +20,6 @@
 
 .coverContainerPrevArrow {
   position: relative;
-  height: 50px;
   top: -250px;
   left: -480px;
   height: 80px;
@@ -30,7 +29,6 @@
 
 .coverContainerNextArrow {
   position: relative;
-  height: 50px;
   top: -250px;
   left: 480px;
   height: 80px;
@@ -98,7 +96,7 @@ h2 {
   font-weight: 500;
 }
 
-.descriptionEquipmentsContainer {
+.host {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -110,4 +108,88 @@ h2 {
   top: -110px;
   color: white;
   left: -100px;
+}
+
+@media (max-width: 767px) {
+  .coverContainer {
+    height: 255px;
+  }
+
+  .coverContainerImage {
+    height: 255px;
+  }
+  .coverContainerPrevArrow {
+    position: relative;
+    height: 24px;
+    top: -150px;
+    left: -135px;
+    transform: rotate(90deg);
+    cursor: pointer;
+  }
+
+  .coverContainerNextArrow {
+    position: relative;
+    top: -150px;
+    left: 155px;
+    height: 24px;
+    transform: rotate(270deg);
+    cursor: pointer;
+  }
+
+  .carouselIndicator {
+    position: relative;
+    top: -50px;
+    color: white;
+    left: -25px;
+  }
+
+  h1 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  h2 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .detailsContainer {
+    display: inline;
+  }
+
+  .tag {
+    font-size: 10px;
+    height: 18px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+  }
+
+  .host {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .hostName {
+    font-size: 12px;
+    line-height: 17px;
+    max-width: 80px;
+  }
+
+  .hostInfos {
+    margin-bottom: 0px;
+  }
+
+  .hostInfos > img {
+    border-radius: 32px;
+    height: 32px;
+    width: 32px;
+  }
+
+  .halfWidth {
+    width: 100%;
+  }
+
+  .descriptionEquipmentsContainer {
+    margin-top: 20px;
+  }
 }

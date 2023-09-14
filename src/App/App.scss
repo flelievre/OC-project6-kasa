@@ -1,8 +1,13 @@
-$body-padding: 88px;
-$light-red: #FF5363;
-$gallery-background: #F6F6F6;
+@import '../variables';
 
 main {
   padding-left: $body-padding;
   padding-right: $body-padding;
+}
+
+@media (max-width: 767px) {
+  main {
+    padding-left: $mobile-body-padding;
+    padding-right: $mobile-body-padding;
+  }
 }

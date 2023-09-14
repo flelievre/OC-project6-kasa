@@ -19,6 +19,7 @@ const Header = () => {
       <img
         src={logoRed}
         alt="KASA red logo"
+        className={styles.logo}
         width="188"
         height="68"
       />

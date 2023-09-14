@@ -50,3 +50,28 @@
 .accordion.open .accordionContent {
   top: -20px;
 }
+
+@media (max-width: 767px) {
+  .accordion {
+    height: 60px;
+  }
+  .accordionTitle {
+    cursor: pointer;
+    padding: 7.5px;
+    display: flex;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .arrow {
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+    transition: transform 0.2s ease-in-out;
+  }
+  .accordionContent {
+    top: -350px;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 35px 15px 15px 15px;
+  }
+}

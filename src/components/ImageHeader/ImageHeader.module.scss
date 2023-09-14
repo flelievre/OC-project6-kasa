@@ -30,3 +30,23 @@
   background:rgba(0,0,0, 0.3);
   border-radius: 20px;  
 }
+
+@media (max-width: 767px) {
+  .imageTitleContainer {
+    margin-bottom: 20px;
+  }
+  .imageTitleContainer > img {
+    height: 111px;
+  }
+  .opacityBg {
+    height: 111px;
+  }
+  .imageTitleContainer > h1 {
+    top: 15px;
+    text-align: left;
+    font-size: 24px;
+    line-height: 24px;
+    margin-left: 15px;
+    max-width: 220px;
+  }
+}
