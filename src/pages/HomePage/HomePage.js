@@ -1,9 +1,6 @@
 import React, {
   useContext,
 } from 'react';
-import {
-  IsMobileContext,
-} from '../../contexts';
 import housing from '../../data/logements.json';
 import HousingCard from './HomePage.components/HousingCard'
 import {
@@ -16,36 +13,32 @@ import styles from './HomePage.module.scss';
 
 const NB_DISPLAYED_HOUSINGS = 20;
 
-const HomePage = () => {
-  const isMobile = useContext(IsMobileContext);
-  console.log(isMobile);
-  return (
-    <>
-      <ImageHeader
-        title="Chez vous, partout et ailleurs"
-        imgSrc={homePageTitleBg}
-        imgAlt="sea side view"
-      />
-      <div className={styles.housingCards}>
-        {housing.map(({
-          id = '', 
-          title = '',
-          cover = '',
-        }, index) => index < NB_DISPLAYED_HOUSINGS
-          ? (
-            <HousingCard
-              key={id}
-              id={id} 
-              title={title}
-              cover={cover}
-            />
-          )
-          : <></>
+const HomePage = () => (
+  <>
+    <ImageHeader
+      title="Chez vous, partout et ailleurs"
+      imgSrc={homePageTitleBg}
+      imgAlt="sea side view"
+    />
+    <div className={styles.housingCards}>
+      {housing.map(({
+        id = '', 
+        title = '',
+        cover = '',
+      }, index) => index < NB_DISPLAYED_HOUSINGS
+        ? (
+          <HousingCard
+            key={id}
+            id={id} 
+            title={title}
+            cover={cover}
+          />
         )
-      }
-      </div>
-    </>
-  );
-};
+        : <></>
+      )
+    }
+    </div>
+  </>
+);
 
 export default HomePage;
