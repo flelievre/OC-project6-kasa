@@ -110,6 +110,12 @@ h2 {
   left: -100px;
 }
 
+.descriptionEquipmentsContainer {
+  margin-top: 20px;
+  display: flex;
+  gap: 100px;
+}
+
 @media (max-width: 767px) {
   .coverContainer {
     height: 255px;
@@ -191,5 +197,6 @@ h2 {
 
   .descriptionEquipmentsContainer {
     margin-top: 20px;
+    display: inline-block;
   }
 }
