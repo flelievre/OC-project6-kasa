@@ -16,13 +16,17 @@ const Header = () => {
   } = useHeader();
   return (
     <header>
-      <img
-        src={logoRed}
-        alt="KASA red logo"
-        className={styles.logo}
-        width="188"
-        height="68"
-      />
+      <ReactRouterLink
+        to={'/'}
+      >
+        <img
+          src={logoRed}
+          alt="KASA red logo"
+          className={styles.logo}
+          width="188"
+          height="68"
+        />
+      </ReactRouterLink>
       <nav>
         <ul>
           {NAV_LINKS.map(({

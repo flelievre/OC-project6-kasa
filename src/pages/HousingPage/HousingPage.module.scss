@@ -1,6 +1,7 @@
 @import '../../variables.scss';
 
 .coverContainer {
+  height: 415px;
   position: relative;
   text-align: center;
 }
@@ -70,7 +71,7 @@ h2 {
 
 .host {
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
 }
 
 .hostInfos {
@@ -171,8 +172,8 @@ h2 {
   }
 
   .host {
-    flex-direction: row-reverse;
     align-items: center;
+    flex-direction: row-reverse !important;
   }
 
   .hostName {
