@@ -66,7 +66,7 @@ const HousingPage = () => {
               <h1>{title}</h1>
               <h2>{location}</h2>
               {tags.map((tag) => (
-                <span key={tag} className={styles.tag}>{tag}</span>
+                <p key={tag} className={styles.tag}>{tag}</p>
               ))}
             </div>
             <div className={styles.host}>

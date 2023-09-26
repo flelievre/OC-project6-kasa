@@ -18,7 +18,7 @@ const RatingStars = ({
       <img
         src={starActive}
         alt="full star"
-        key={i}
+        key={`${i}-full-star`}
       />);
   }
 
@@ -27,7 +27,7 @@ const RatingStars = ({
       <img
         src={starInactive}
         alt="half star"
-        key={i}
+        key={`${i}-half-star`}
       />
     );
   }

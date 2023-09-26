@@ -60,6 +60,7 @@ h2 {
   margin-right: 10px;
   border-radius: 10px;
   font-size: 14px;
+  display: inline-block;
 }
 
 .detailsContainer {
@@ -72,6 +73,7 @@ h2 {
 .host {
   display: flex;
   flex-direction: column !important;
+  min-width: 200px;
 }
 
 .hostInfos {
@@ -166,9 +168,11 @@ h2 {
 
   .tag {
     font-size: 10px;
-    height: 18px;
+    height: 15px;
     padding: 5px 20px 5px 20px;
-    border-radius: 5px;
+    border-radius: 8px;
+    display: inline-block;
+    line-height: 15px;
   }
 
   .host {
